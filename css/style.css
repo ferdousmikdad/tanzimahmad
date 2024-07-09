@@ -5,7 +5,7 @@
 	--color-primary: #00C1D1;
 	--color-secondary: #CBD8F8;
 	--color-normal-text: #8292AA;
-    --color-border: #243156;
+    --color-border: 1px solid #243156;
     --color-headings: #CBD8F8;
 	--color-body: #101424;
     --color-background: #0D111F;
@@ -28,6 +28,8 @@ body{
     background-color: var(--color-background);
     color: var(--color-normal-text);
     font-size: 1.8rem;
+    margin: 0 auto;
+    max-width: 120rem;
 }
 
 h1, h2, h3{
@@ -45,37 +47,84 @@ h2{
 }
 h3{
     font-size: 2.5rem;
-    margin-bottom: 1rem;
 }
 p{
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
 }
 
 
-@media screen and (min-width: 1024px) {
-    body{
+/* @media screen and (min-width: 1024px) { */
+    /* body{
         font-size: 1.8rem;
         /* FIXME: I should respond to the font size when I make the site responsive.  */
-    }
-}
 
 
 /* Links */
-.link-arrow{
+.link-style{
     color: var(--color-normal-text);
     text-decoration: none;
     font-size: 2rem;
 }
-.link-arrow::after{
-    content: '';
-    margin-left: 5px;
+
+.link-style:hover{
+    color: var(--color-primary);
 }
-.link-arrow:hover::after{
+
+/* Lists */
+.list-none{
+    list-style: none;
+    padding-left: 0;
+}
+.list--inline{
+    display: inline;
+}
+
+.list__item{
+    /* padding-left: 3rem; */
+    padding-left: 3rem;
+    margin: 3rem 0;
     
 }
 
-
-
-
-
 /* common and shared styles */
+.bg-border{
+    background-color: var(--color-body);
+    border: var(--color-border);
+    /* padding: 1.5rem 2.5rem; */
+    border-radius: .8rem;
+}
+
+
+/* TODO: I should apply the nve bar to flex shiringk */
+
+/* navbar */
+.logo-nav-items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    align-items: center;
+    
+}
+
+.nav-items{
+    padding: 2.2rem 2rem 2.2rem 0;
+}
+.logo-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.logo-nav-icon{
+    width: 20px;
+    padding: 1.5rem 3rem;
+}
+
+.name-logo{
+    margin: 0;
+    margin-left: 10px;
+    padding: 1.5rem 3rem;
+
+}
+
