@@ -7,6 +7,7 @@
 	--color-secondary: #CBD8F8;
 	--color-normal-text: #8292AA;
     --color-border: #243156;
+    --color-headings: #CBD8F8;
 	--color-body: #101424;
     --color-background: #0D111F;
 
@@ -16,8 +17,21 @@
 	--heading-font-size: 2rem;
 }
 
+html{
+    /* 62.5% of 16px = 10px */
+    font-size: 62.5%;
+}
 body{
     font-family: roboto mono, monospace;
     background-color: var(--color-background);
     color: var(--color-normal-text);
+}
+
+h1, h2, h3{
+    color: var(--color-headings);
+}
+
+h1{
+    /* 1 x font size of the html element */
+    font-size: 5rem;
 }
