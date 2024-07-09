@@ -3,26 +3,15 @@
 /* CSS Variables */
 :root {
 	/* Colors */
-	--primary-color: #00C1D1;
-	--secondary-color: #CBD8F8;
-	--text-color: #8292AA;
-	--background-color: #243156;
+	--color-primary: #00C1D1;
+	--color-secondary: #CBD8F8;
+	--color-normal-text: #8292AA;
+    --color-border: #243156;
+	--color-body: #101424;
+    --color-background: #0D111F;
 
 	/* Typography */
-	--font-family: 'Roboto Mono', monospace;
-	--font-size-base: 16px;
-	--heading-font-size: 24px;
-
-	/* Spacing */
-	--padding-small: 10px;
-	--padding-medium: 20px;
-	--padding-large: 30px;
-	--margin-small: 10px;
-	--margin-medium: 20px;
-	--margin-large: 30px;
-
-	/* Border */
-	--border-width: 1px;
-	--border-color: #ccc;
-	--border-radius: 4px;
+	--font-family: Roboto Mono, 'monospace';
+	--font-size-base: 1rem;
+	--heading-font-size: 2rem;
 }
