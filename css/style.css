@@ -14,6 +14,9 @@
 	--font-family: Roboto Mono, 'monospace';
 	--font-size-base: 1rem;
 	--heading-font-size: 2rem;
+
+    /* Width and height */
+    --height-navbar: 7rem;
 }
 
 
@@ -29,13 +32,13 @@ body{
     color: var(--color-normal-text);
     font-size: 1.8rem;
     margin: 0 auto;
+    padding: 0;
     max-width: 120rem;
 }
 
 h1, h2, h3{
     color: var(--color-headings);
     margin-bottom: 1rem;
-    font-weight: normal;
 }
 
 h1{
@@ -72,7 +75,7 @@ p{
 }
 
 /* Lists */
-.list-none{
+.list-style-none{
     list-style: none;
     padding-left: 0;
 }
@@ -80,54 +83,73 @@ p{
     display: inline;
 }
 
+
 .list__item{
-    /* padding-left: 3rem; */
     padding-left: 3rem;
     margin: 3rem 0;
-    
 }
 
 /* common and shared styles */
-.bg-border{
+.bg__border{
     background-color: var(--color-body);
     border: var(--color-border);
     /* padding: 1.5rem 2.5rem; */
     border-radius: .8rem;
 }
 
+.code__color{
+    color: var(--color-primary);
+}
+
+.height-navbar{
+    height: var(--height-navbar);
+}
+
 
 /* TODO: I should apply the nve bar to flex grow */
 
 /* navbar */
-.logo-nav-items{
-    display: flex;
+
+.navbar{
+    display: grid;
+    grid-template-columns: 70px 2.5fr 7fr;
+    column-gap: .5rem;
     margin-top: 5rem;
-    align-items: center;
+}
+.nav-content{
+    height: var(--height-navbar);
 }
 
 
-.nav-items{
-    /* padding: 2.2rem 2rem 2.2rem 0; */
-}
-.nav-items-grow{
-    flex-grow: 8;
-}
-
-.logo-nav{
+.hero-section{
     display: flex;
-    /* justify-content: center; */
+    margin-top: 8rem;
+}
+
+.hero-content{
+    width: 50%;
+}
+.hero-image{
+    width: 50%;
+    display: flex;
     align-items: center;
-    margin: 0;
-}
-.logo-nav-icon{
-    width: 20px;
-    /* padding: 1.5rem 3rem; */
 }
 
-.name-logo{
-    margin: 0;
-    margin-left: 10px;
-    /* padding: 1.5rem 3rem; */
-
+.hero-image img{
+    width: 100%;
 }
 
+
+
+/* about-section */
+.about-section{
+    margin-top: 12rem;
+}
+
+.about-icon{
+    display: flex;
+}
+
+.about-icon p{
+    margin-left: .5rem;
+}
