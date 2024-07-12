@@ -105,6 +105,15 @@ p{
     height: var(--height-navbar);
 }
 
+.section__title{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.margin__left__halfrem{
+    margin-left: .5rem;
+}
+
 
 /* TODO: I should apply the nve bar to flex grow */
 
@@ -146,10 +155,25 @@ p{
     margin-top: 12rem;
 }
 
-.about-icon{
+.aobut-description{
     display: flex;
 }
 
-.about-icon p{
-    margin-left: .5rem;
+
+
+/* tesimonial */
+.testimonial-section{
+    margin-top: 12rem;
 }
+
+/* footer */
+footer{
+    margin-top: 12rem;
+
+}
+
+.footer-bar{
+    border-top: var(--color-border);
+    margin-bottom: 3rem;
+}
+
